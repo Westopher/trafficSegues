@@ -18,32 +18,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-cy-gtY">
-                                <rect key="frame" x="66" y="264" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eA-as-5xR">
-                                <rect key="frame" x="247" y="264" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-cy-gtY">
+                                <rect key="frame" x="40" y="218" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Push To Yellow">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kO2-cu-81K"/>
+                                </connections>
                             </button>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQ0-Ri-EgT">
                                 <rect key="frame" x="163" y="318" width="51" height="31"/>
                             </switch>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eA-as-5xR">
+                                <rect key="frame" x="232" y="218" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Push To Green">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lAJ-LT-Tf5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.972669807435533" green="0.55661710241228113" blue="0.48562651715057342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="zQ0-Ri-EgT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Be-hV-Gnk"/>
-                            <constraint firstItem="5eA-as-5xR" firstAttribute="leading" secondItem="1Pa-cy-gtY" secondAttribute="trailing" constant="135" id="GUK-yz-syn"/>
-                            <constraint firstItem="1Pa-cy-gtY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Klc-m0-xuE"/>
-                            <constraint firstItem="5eA-as-5xR" firstAttribute="leading" secondItem="1Pa-cy-gtY" secondAttribute="trailing" constant="135" id="LVl-w4-zhp"/>
-                            <constraint firstItem="5eA-as-5xR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Om5-pN-qMb"/>
-                            <constraint firstItem="1Pa-cy-gtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Suo-bM-bMD"/>
                             <constraint firstItem="zQ0-Ri-EgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UqM-1W-dzC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5eA-as-5xR" secondAttribute="trailing" constant="82" id="bGk-QL-YTH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Red" id="tzu-OM-q3f"/>
+                    <connections>
+                        <outlet property="segueSwitch" destination="zQ0-Ri-EgT" id="STS-vL-s5K"/>
+                        <segue destination="cNp-hA-S1J" kind="show" identifier="Yellow" id="job-rN-wgx"/>
+                        <segue destination="mvr-uu-AK1" kind="show" identifier="Green" id="2h8-I0-2XA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -63,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dih-Zf-FYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1852" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1972" y="-311"/>
         </scene>
         <!--Green-->
         <scene sceneID="l0u-bG-ylx">
@@ -75,13 +88,11 @@
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="DEy-Qf-Hi9"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Green" id="Vh7-AQ-reK">
-                        <barButtonItem key="rightBarButtonItem" title="Pop" id="IOC-EG-Ct9"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Green" id="Vh7-AQ-reK"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j4-jU-2bZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2608.8000000000002" y="132.68365817091455"/>
+            <point key="canvasLocation" x="1972" y="457"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ufb-eM-FCL">
