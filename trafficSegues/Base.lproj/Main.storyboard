@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Red-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="trafficSegues" customModuleProvider="target" sceneMemberID="viewController">
@@ -33,13 +33,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tzu-OM-q3f"/>
+                    <navigationItem key="navigationItem" title="Red" id="tzu-OM-q3f"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1104.8" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow-->
         <scene sceneID="ZyL-CQ-kMh">
             <objects>
                 <viewController id="cNp-hA-S1J" sceneMemberID="viewController">
@@ -62,12 +62,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JOj-oJ-uDZ"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Yellow" id="NU3-PX-FOL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dih-Zf-FYp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1852" y="132.68365817091455"/>
         </scene>
-        <!--View Controller-->
+        <!--Green-->
         <scene sceneID="l0u-bG-ylx">
             <objects>
                 <viewController id="mvr-uu-AK1" sceneMemberID="viewController">
@@ -92,6 +93,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DEy-Qf-Hi9"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Green" id="Vh7-AQ-reK">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="IOC-EG-Ct9"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j4-jU-2bZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="dpz-nW-mFB" userLabel="Exit" sceneMemberID="exit"/>
@@ -114,7 +118,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hau-f0-BS9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="165.59999999999999" y="132.68365817091455"/>
+            <point key="canvasLocation" x="292" y="133"/>
         </scene>
     </scenes>
 </document>
