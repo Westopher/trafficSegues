@@ -75,26 +75,15 @@
                     <view key="view" contentMode="scaleToFill" id="MD9-8E-fjN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dzB-fF-eAe">
-                                <rect key="frame" x="160.5" y="318.5" width="54" height="30"/>
-                                <state key="normal" title="Dismiss">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <segue destination="dpz-nW-mFB" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="AcQ-eI-5aN"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="dzB-fF-eAe" firstAttribute="centerX" secondItem="MD9-8E-fjN" secondAttribute="centerX" id="PvB-54-Rl6"/>
-                            <constraint firstItem="dzB-fF-eAe" firstAttribute="centerY" secondItem="MD9-8E-fjN" secondAttribute="centerY" id="yQY-tD-69k"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DEy-Qf-Hi9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Green" id="Vh7-AQ-reK">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="IOC-EG-Ct9"/>
+                        <barButtonItem key="rightBarButtonItem" title="Pop" id="IOC-EG-Ct9">
+                            <connections>
+                                <segue destination="dpz-nW-mFB" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="KmT-6y-Xen"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j4-jU-2bZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
