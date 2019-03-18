@@ -22,7 +22,7 @@
                                 <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="cNp-hA-S1J" kind="presentation" id="RS6-0Z-iZ3"/>
+                                    <segue destination="cNp-hA-S1J" kind="show" id="Kvl-Re-FUi"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -51,7 +51,7 @@
                                 <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="mvr-uu-AK1" kind="presentation" id="0PG-oR-95i"/>
+                                    <segue destination="mvr-uu-AK1" kind="show" id="MRf-Of-BEc"/>
                                 </connections>
                             </button>
                         </subviews>
