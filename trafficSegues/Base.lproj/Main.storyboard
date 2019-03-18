@@ -18,18 +18,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qT-Uf-ATT">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Pa-cy-gtY">
+                                <rect key="frame" x="66" y="264" width="46" height="30"/>
                                 <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="cNp-hA-S1J" kind="show" id="Kvl-Re-FUi"/>
-                                </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eA-as-5xR">
+                                <rect key="frame" x="247" y="264" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zQ0-Ri-EgT">
+                                <rect key="frame" x="163" y="318" width="51" height="31"/>
+                            </switch>
                         </subviews>
-                        <color key="backgroundColor" red="0.81294978839999998" green="0.22830250050000001" blue="0.13666471999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.972669807435533" green="0.55661710241228113" blue="0.48562651715057342" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="1qT-Uf-ATT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="D6M-f9-xA5"/>
-                            <constraint firstItem="1qT-Uf-ATT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tg2-cF-xel"/>
+                            <constraint firstItem="zQ0-Ri-EgT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8Be-hV-Gnk"/>
+                            <constraint firstItem="5eA-as-5xR" firstAttribute="leading" secondItem="1Pa-cy-gtY" secondAttribute="trailing" constant="135" id="GUK-yz-syn"/>
+                            <constraint firstItem="1Pa-cy-gtY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Klc-m0-xuE"/>
+                            <constraint firstItem="5eA-as-5xR" firstAttribute="leading" secondItem="1Pa-cy-gtY" secondAttribute="trailing" constant="135" id="LVl-w4-zhp"/>
+                            <constraint firstItem="5eA-as-5xR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="200" id="Om5-pN-qMb"/>
+                            <constraint firstItem="1Pa-cy-gtY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="Suo-bM-bMD"/>
+                            <constraint firstItem="zQ0-Ri-EgT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="UqM-1W-dzC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5eA-as-5xR" secondAttribute="trailing" constant="82" id="bGk-QL-YTH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -46,20 +56,7 @@
                     <view key="view" contentMode="scaleToFill" id="mAF-hi-9KT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RqD-HE-IVT">
-                                <rect key="frame" x="164.5" y="318.5" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="mvr-uu-AK1" kind="show" id="MRf-Of-BEc"/>
-                                </connections>
-                            </button>
-                        </subviews>
                         <color key="backgroundColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="RqD-HE-IVT" firstAttribute="centerY" secondItem="mAF-hi-9KT" secondAttribute="centerY" id="8k1-45-xqP"/>
-                            <constraint firstItem="RqD-HE-IVT" firstAttribute="centerX" secondItem="mAF-hi-9KT" secondAttribute="centerX" id="Uoo-AD-YoA"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JOj-oJ-uDZ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Yellow" id="NU3-PX-FOL"/>
@@ -79,15 +76,10 @@
                         <viewLayoutGuide key="safeArea" id="DEy-Qf-Hi9"/>
                     </view>
                     <navigationItem key="navigationItem" title="Green" id="Vh7-AQ-reK">
-                        <barButtonItem key="rightBarButtonItem" title="Pop" id="IOC-EG-Ct9">
-                            <connections>
-                                <segue destination="dpz-nW-mFB" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="KmT-6y-Xen"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Pop" id="IOC-EG-Ct9"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5j4-jU-2bZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="dpz-nW-mFB" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2608.8000000000002" y="132.68365817091455"/>
         </scene>
